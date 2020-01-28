@@ -7,33 +7,3 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
-
-
-html {
-    font-size: 62.5%; /* 16px * 62.5% = 10px */
-}
-
-body {
-    font-size: 1.6rem; /* 10px * 1.6rem = 16px */
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-ul {
-    list-style: none;
-}
-
-* {
-    margin: 0;
-    padding: 0;   
-}
-
-.wrapper {
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
-}

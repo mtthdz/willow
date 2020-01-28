@@ -1,0 +1,33 @@
+
+
+
+
+// general css
+
+html {
+    font-size: 62.5%; /* 16px * 62.5% = 10px */
+}
+
+body {
+    font-size: 1.6rem; /* 10px * 1.6rem = 16px */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
