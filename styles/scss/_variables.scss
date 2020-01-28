@@ -1,0 +1,70 @@
+
+
+
+
+// variables
+/////////////////////////////////////
+
+
+// colours
+$primaryColor: #345231;
+$secondaryColor: #709B6B;
+$accentColor: #E4A436;
+$blackShade: #1F1F1F;
+$whiteShade: #F6F6F6;
+
+
+// font families
+$primaryFont: 'Abril Fatface', cursive;
+$secondaryFont: 'Montserrat', sans-serif;
+
+
+// text properties
+
+
+// mixins
+/////////////////////////////////////
+
+
+// h2
+@mixin headerTwo {
+    font-family: $primaryFont;
+    font-weight: regular;
+    font-size: 8.0rem;
+    line-height: 92px;
+    letter-spacing: 1px;
+    color: $whiteShade;
+}
+
+// h3
+@mixin headerThree($shadeValue) {
+    font-family: $primaryFont;
+    font-weight: regular;
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+    color: $shadeValue; //nav has white shade, remainder has black
+}
+
+// h4
+@mixin headerFour {
+    font-family: $primaryFont;
+    font-weight: regular;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    color: $blackShade;
+}
+
+// h5
+@mixin headerFive {
+    font-family: $primaryFont;
+    font-weight: regular;
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    color: $blackShade;
+}
+
+
+/////////////////////////////////////
+
+
+
