@@ -10,6 +10,8 @@ html {
 
 body {
     font-size: 1.6rem; /* 10px * 1.6rem = 16px */
+    font-family: $secondaryFont;
+    font-family: $primaryFont;
 }
 
 img {
@@ -19,6 +21,11 @@ img {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $blackShade;
 }
 
 * {

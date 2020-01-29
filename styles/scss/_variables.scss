@@ -31,6 +31,7 @@ $secondaryFont: 'Montserrat', sans-serif;
     font-family: $primaryFont;
     font-weight: regular;
     font-size: 8.0rem;
+    text-transform: uppercase;
     line-height: 92px;
     letter-spacing: 1px;
     color: $whiteShade;
@@ -41,6 +42,7 @@ $secondaryFont: 'Montserrat', sans-serif;
     font-family: $primaryFont;
     font-weight: regular;
     font-size: 4.2rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: $shadeValue; //nav has white shade, remainder has black
 }
@@ -50,6 +52,7 @@ $secondaryFont: 'Montserrat', sans-serif;
     font-family: $primaryFont;
     font-weight: regular;
     font-size: 3.2rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: $blackShade;
 }
@@ -59,6 +62,7 @@ $secondaryFont: 'Montserrat', sans-serif;
     font-family: $primaryFont;
     font-weight: regular;
     font-size: 2.4rem;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: $blackShade;
 }

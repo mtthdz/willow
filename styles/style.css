@@ -234,3 +234,98 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 62.5%;
+  /* 16px * 62.5% = 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  /* 10px * 1.6rem = 16px */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Abril Fatface", cursive;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #1F1F1F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-nav {
+  background-color: #345231;
+  width: 100%;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.nav-list .nav-item {
+  height: 100%;
+  margin-right: 3%;
+  padding: 2% 0;
+}
+
+.nav-list .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  line-height: 29px;
+  letter-spacing: 1px;
+  color: #F6F6F6;
+  height: 100%;
+  padding: 5% 0;
+}
+
+.nav-list .nav-item .nav-link:hover,
+.nav-list .nav-item .nav-link:focus {
+  color: #E4A436;
+}
+
+.nav-list .nav-item .nav-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #F6F6F6;
+}
+
+.nav-list .nav-item:nth-child(5) {
+  margin-right: 0;
+}
