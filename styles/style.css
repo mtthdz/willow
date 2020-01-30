@@ -277,6 +277,7 @@ a {
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
+  line-height: 1.5;
   color: #1F1F1F;
   text-transform: uppercase;
   background-color: #E4A436;
@@ -347,6 +348,10 @@ a {
   margin-right: 0;
 }
 
+.wrapper {
+  outline: 1px blue solid;
+}
+
 header {
   background-color: #345231;
   position: relative;
@@ -414,8 +419,8 @@ header .header-headshot {
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #1F1F1F;
   line-height: 1.5;
+  color: #1F1F1F;
   text-align: center;
   padding: 2% 0;
   width: 100%;
@@ -437,18 +442,6 @@ header .header-headshot {
   position: relative;
 }
 
-.highlighted-image-container .highlighted-foreground {
-  width: calc(100% + 20px);
-  height: 100%;
-  background-color: #709B6B;
-}
-
-.highlighted-image-container .highlighted-image {
-  position: absolute;
-  height: auto;
-  width: 75%;
-}
-
 .highlighted-content-container {
   border: 2px salmon solid;
   width: 50%;
@@ -456,6 +449,28 @@ header .header-headshot {
 
 .highlighted-content-container .highlighted-content {
   border: 2px black solid;
+  margin: 0;
+  margin-right: auto;
+}
+
+.highlighted-content-container .highlighted-content .highlighted-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  padding-top: 12%;
+}
+
+.highlighted-content-container .highlighted-content .highlighted-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+  padding: 3% 0;
 }
 
 .featured {
@@ -501,8 +516,8 @@ header .header-headshot {
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #1F1F1F;
   line-height: 1.5;
+  color: #1F1F1F;
   padding: 4% 0;
 }
 
@@ -576,8 +591,8 @@ header .header-headshot {
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #1F1F1F;
   line-height: 1.5;
+  color: #1F1F1F;
 }
 
 footer {
@@ -590,8 +605,8 @@ footer .copyright {
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
-  color: #1F1F1F;
   line-height: 1.5;
+  color: #1F1F1F;
   color: #F6F6F6;
   text-align: center;
   padding: 0.5% 0;

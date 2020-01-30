@@ -1,6 +1,6 @@
 
 .wrapper {
-    // outline: 1px blue solid;
+    outline: 1px blue solid;
 }
 
 
@@ -56,7 +56,6 @@ header {
 
         .about-paragraph {
             @include para($secondaryFont);
-            line-height: 1.5;
             text-align: center;
             padding: 2% 0;
             width: 100%;
@@ -77,17 +76,17 @@ header {
     width: 50%;
     position: relative;
 
-    .highlighted-foreground {
-        width: calc(100% + 20px);
-        height: 100%;
-        background-color: $secondaryColor;
-    }
+    // .highlighted-foreground {
+    //     width: calc(100% + 20px);
+    //     height: 100%;
+    //     background-color: $secondaryColor;
+    // }
 
-    .highlighted-image {
-        position: absolute;
-        height: auto;
-        width: 75%;
-    }
+    // .highlighted-image {
+    //     position: absolute;
+    //     height: auto;
+    //     width: 75%;
+    // }
 }
 
 // child 2-2
@@ -97,6 +96,18 @@ header {
 
     .highlighted-content {
         border: 2px black solid;
+        margin: 0;
+        margin-right: auto;
+
+        .highlighted-title {
+            @include headerFour;
+            padding-top: 12%;
+        }
+
+        .highlighted-paragraph {
+            @include para($secondaryFont);
+            padding: 3% 0;
+        }
     }
 }
 
@@ -131,7 +142,6 @@ header {
 
         .featured-paragraph {
             @include para($secondaryFont);
-            line-height: 1.5;
             padding: 4% 0;
         }
 
@@ -191,7 +201,6 @@ header {
 
             .nav-description {
                 @include para($secondaryFont);
-                line-height: 1.5;
             }
         }
     }
@@ -206,7 +215,6 @@ footer {
 
     .copyright {
         @include para($secondaryFont);
-        line-height: 1.5;
         color: $whiteShade;
         text-align: center;
         padding: 0.5% 0;
