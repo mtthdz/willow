@@ -274,7 +274,7 @@ a {
 
 .button {
   font-family: "Abril Fatface", cursive;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
   color: #1F1F1F;
@@ -411,19 +411,54 @@ header .header-headshot {
 
 .about .about-parent .about-paragraph {
   font-family: "Montserrat", sans-serif;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
   color: #1F1F1F;
-  font-weight: 300;
   line-height: 1.5;
   text-align: center;
   padding: 2% 0;
   width: 100%;
 }
 
+.highlighted-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.highlighted-image-container {
+  border: 2px blue solid;
+  width: 50%;
+  position: relative;
+}
+
+.highlighted-image-container .highlighted-foreground {
+  width: calc(100% + 20px);
+  height: 100%;
+  background-color: #709B6B;
+}
+
+.highlighted-image-container .highlighted-image {
+  position: absolute;
+  height: auto;
+  width: 75%;
+}
+
+.highlighted-content-container {
+  border: 2px salmon solid;
+  width: 50%;
+}
+
+.highlighted-content-container .highlighted-content {
+  border: 2px black solid;
+}
+
 .featured {
-  border: 1px black solid;
   background-color: #F6F6F6;
   padding: 10% 0 8%;
 }
@@ -439,11 +474,125 @@ header .header-headshot {
 }
 
 .featured-parent .featured-image-container {
-  width: 25%;
-  border: 1px blue solid;
+  width: 23%;
+  margin-right: 12%;
+}
+
+.featured-parent .featured-image-container .featured-image {
+  -webkit-box-shadow: 20px 20px #709B6B;
+          box-shadow: 20px 20px #709B6B;
 }
 
 .featured-parent .featured-content {
   width: 60%;
-  border: 1px blue solid;
+}
+
+.featured-parent .featured-content .featured-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+}
+
+.featured-parent .featured-content .featured-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  line-height: 1.5;
+  padding: 4% 0;
+}
+
+.featured-parent .featured-content .button {
+  margin-top: 2%;
+}
+
+.banner {
+  background-image: url(../assets/home-image-5.jpg);
+  height: 55vh;
+  width: 100%;
+}
+
+.gallery {
+  padding: 6% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row-wrap;
+          flex-flow: row-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .gallery-image:nth-child(2) {
+  padding: 0 3%;
+}
+
+.secondary-nav {
+  background-color: #F6F6F6;
+  padding: 5% 0;
+}
+
+.secondary-nav .parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.secondary-nav .parent .nav-icon {
+  background-color: #E4A436;
+  color: #1F1F1F;
+  font-size: 2.0rem;
+  padding: 1%;
+  border-radius: 50%;
+  margin-right: 1%;
+}
+
+.secondary-nav .parent .nav-content-container {
+  width: 80%;
+}
+
+.secondary-nav .parent .nav-content-container .nav-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+}
+
+.secondary-nav .parent .nav-content-container .nav-description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: #1F1F1F;
+  color: #F6F6F6;
+}
+
+footer .copyright {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  line-height: 1.5;
+  color: #F6F6F6;
+  text-align: center;
+  padding: 0.5% 0;
 }
