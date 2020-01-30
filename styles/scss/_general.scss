@@ -38,3 +38,17 @@ a {
     width: 90%;
     margin: 0 auto;
 }
+
+.button {
+    @include para($primaryFont);
+    text-transform: uppercase;
+    background-color: $accentColor;
+    border: none;
+    padding: 10px 20px;
+}
+
+.button:hover,
+.button:focus {
+    background-color: darken($accentColor, 5);
+    color: $whiteShade;
+}

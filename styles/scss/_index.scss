@@ -1,0 +1,88 @@
+
+.wrapper {
+    // outline: 1px blue solid;
+}
+
+
+// header
+header {
+    background-color: $primaryColor;
+    position: relative;
+
+    .header-title-container {
+        width: 70%;
+        position: relative;
+
+        .header-subtitle {
+            width: 15%;
+            position: absolute;
+            top: 35%;
+        }
+
+        .header-title {
+            font-size: 14.0rem;
+            text-transform: uppercase;
+            color: $whiteShade;
+            padding: 25% 0 25% 8%;
+            margin: 0 auto;
+        }
+    }
+
+    .header-headshot {
+        box-shadow: 20px 20px #FFFFFF;
+        width: 30%;
+        right: 10%;
+        top: 20%;
+        position: absolute;
+    }
+}
+
+// about
+.about {
+    background-color: $whiteShade;
+    padding: 8% 0 10%;
+
+    .about-parent {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        .about-title {
+        @include headerThree($blackShade);
+        width: 100%;
+        text-align: center;
+        }
+
+        .about-paragraph {
+            @include para($secondaryFont);
+            font-weight: 300;
+            line-height: 1.5;
+            text-align: center;
+            padding: 2% 0;
+            width: 100%;
+        }
+    }
+}
+
+.featured {
+    border: 1px black solid;
+    background-color: $whiteShade;
+    padding: 10% 0 8%;
+}
+
+.featured-parent {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .featured-image-container {
+        width: 25%;
+        border: 1px blue solid;
+    }
+
+    .featured-content {
+        width: 60%;
+        border: 1px blue solid;
+    }
+}
+
+

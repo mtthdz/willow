@@ -67,6 +67,15 @@ $secondaryFont: 'Montserrat', sans-serif;
     color: $blackShade;
 }
 
+@mixin para($font) {
+    font-family: $font;
+    font-weight: normal;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: $blackShade;
+
+}
+
 
 /////////////////////////////////////
 

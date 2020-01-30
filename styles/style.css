@@ -272,6 +272,24 @@ a {
   margin: 0 auto;
 }
 
+.button {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  text-transform: uppercase;
+  background-color: #E4A436;
+  border: none;
+  padding: 10px 20px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e19a20;
+  color: #F6F6F6;
+}
+
 .main-nav {
   background-color: #345231;
   width: 100%;
@@ -291,7 +309,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
 
 .nav-list .nav-item {
@@ -328,4 +345,105 @@ a {
 
 .nav-list .nav-item:nth-child(5) {
   margin-right: 0;
+}
+
+header {
+  background-color: #345231;
+  position: relative;
+}
+
+header .header-title-container {
+  width: 70%;
+  position: relative;
+}
+
+header .header-title-container .header-subtitle {
+  width: 15%;
+  position: absolute;
+  top: 35%;
+}
+
+header .header-title-container .header-title {
+  font-size: 14.0rem;
+  text-transform: uppercase;
+  color: #F6F6F6;
+  padding: 25% 0 25% 8%;
+  margin: 0 auto;
+}
+
+header .header-headshot {
+  -webkit-box-shadow: 20px 20px #FFFFFF;
+          box-shadow: 20px 20px #FFFFFF;
+  width: 30%;
+  right: 10%;
+  top: 20%;
+  position: absolute;
+}
+
+.about {
+  background-color: #F6F6F6;
+  padding: 8% 0 10%;
+}
+
+.about .about-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .about-parent .about-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  width: 100%;
+  text-align: center;
+}
+
+.about .about-parent .about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  padding: 2% 0;
+  width: 100%;
+}
+
+.featured {
+  border: 1px black solid;
+  background-color: #F6F6F6;
+  padding: 10% 0 8%;
+}
+
+.featured-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.featured-parent .featured-image-container {
+  width: 25%;
+  border: 1px blue solid;
+}
+
+.featured-parent .featured-content {
+  width: 60%;
+  border: 1px blue solid;
 }

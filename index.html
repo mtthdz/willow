@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300,700&display=swap" rel="stylesheet">
     
     <title>Willow - home</title>
 </head>
@@ -21,21 +21,25 @@
             </ul>
         </nav>
     
-        <img src="./assets/circle-text.png" alt="Daily musings of" class="subtitle">
-        <h1 class="title">willow</h1>
-        <img src="./assets/home-image-1.jpg" alt="headshot of Willow in a yellow raincoat" class="headshot">
+        <div class="wrapper header">
+            <div class="header-title-container">
+                <img class="header-subtitle" src="./assets/circle-text.png" alt="Daily musings of">
+                <h1 class="header-title">willow</h1>
+            </div>
+            <img class="header-headshot" src="./assets/home-image-1.jpg" alt="headshot of Willow in a yellow raincoat">
+        </div>
     </header>
       
     <main>
         <section class="about">
-            <h4 class="about-title">who's willow?</h4>
-            <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla reprehenderit magni
-                vel minus voluptatem, quas sunt eligendi repudiandae facilis perspiciatis consequatur laudantium optio
-                tenetur, deserunt dolore eveniet delectus, corporis fugiat.</p>
-            <button class="button">find out more</button>
+            <div class="wrapper about-parent">
+                <h4 class="about-title">who's willow?</h4>
+                <p class="about-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet velit laboriosam quia adipisci ullam doloremque earum, recusandae aliquid ut animi in id repellendus blanditiis voluptas hic voluptate vitae provident facilis. Earum voluptatem maiores, quaerat eius aliquid nobis pariatur sed! Repellat libero ipsum corporis odit delectus totam ipsa sit.</p>
+                <button class="button">find out more</button>
+            </div>
         </section>
-    
-        <section class="highlighted">
+
+        <!-- <section class="highlighted">
             <div class="highlighted-section">
                 <div class="highlighted-foreground">
                     <img class="wrapper highlighted-image" src="./assets/home-image-2.jpg"
@@ -67,19 +71,21 @@
                         alt="pretty flower sitting on water">
                 </div>
             </div>
-        </section>
+        </section> -->
     
-        <section class="wrapper featured">
-            <div class="featured-image-container">
-                <img src="./assets/home-image-4.jpg" alt="shot from behind Willow in a greenhouse" class="featured-image">
-            </div>
-    
-            <div class="featured-content">
-                <h4 class="featured-title">willow's journey</h4>
-                <p class="featured-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nam labore.
-                    Reprehenderit officia cum quos saepe quis repellendus, nihil in distinctio, possimus non aliquam nam
-                    fugit rem sequi veritatis odit!</p>
-                <button class="button">find out more</button>
+        <section class="featured">
+            <div class="wrapper featured-parent">
+                <div class="featured-image-container">
+                    <img src="./assets/home-image-4.jpg" alt="shot from behind Willow in a greenhouse" class="featured-image">
+                </div>
+        
+                <div class="featured-content">
+                    <h4 class="featured-title">willow's journey</h4>
+                    <p class="featured-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nam labore.
+                        Reprehenderit officia cum quos saepe quis repellendus, nihil in distinctio, possimus non aliquam nam
+                        fugit rem sequi veritatis odit!</p>
+                    <button class="button">find out more</button>
+                </div>
             </div>
         </section>
     
@@ -99,6 +105,7 @@
                 <li class="secondary-nav-item"><a href="./contact.html" class="secondary-nav-link">contact me</a></li>
             </ul>
         </nav>
+
     </main>
     
     <footer>
