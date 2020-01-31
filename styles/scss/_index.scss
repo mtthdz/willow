@@ -3,6 +3,7 @@
 
 
 // header
+/////////////////////////
 header {
     background-color: $primaryColor;
     position: relative;
@@ -37,6 +38,7 @@ header {
 
 
 // about
+/////////////////////////
 .about {
     background-color: $whiteShade;
     padding: 8% 0 10%;
@@ -63,6 +65,7 @@ header {
 
 
 // highlighted section
+/////////////////////////
 .highlighted-section {
     display: flex;
     flex-flow: row wrap;
@@ -97,6 +100,7 @@ header {
         padding: 5% 0;
     }
 }
+
 
 // highlighted section two
 .highlighted-section-two {
@@ -139,6 +143,7 @@ header {
 
 
 // featured section
+/////////////////////////
 .featured {
     background-color: $whiteShade;
     padding: 10% 0 8%;
@@ -179,6 +184,7 @@ header {
 
 
 // banner
+/////////////////////////
 .banner {
     background-image: url(../assets/home-image-5.jpg);
     height: 55vh;
@@ -187,6 +193,7 @@ header {
 
 
 // gallery
+/////////////////////////
 .gallery {
     padding: 6% 0;
     display: flex;
@@ -200,6 +207,7 @@ header {
 
 
 // secondary nav
+/////////////////////////
 .secondary-nav {
     background-color: $whiteShade;
     padding: 5% 0 2%;
@@ -248,6 +256,7 @@ header {
 
 
 // footer
+/////////////////////////
 footer {
     background-color: $blackShade;
     color: $whiteShade;
