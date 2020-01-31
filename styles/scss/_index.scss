@@ -1,7 +1,5 @@
 
-.wrapper {
-    outline: 1px blue solid;
-}
+
 
 
 // header
@@ -68,46 +66,74 @@ header {
 .highlighted-section {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 // child 1-2
 .highlighted-image-container {
-    border: 2px blue solid;
     width: 50%;
     position: relative;
 
-    // .highlighted-foreground {
-    //     width: calc(100% + 20px);
-    //     height: 100%;
-    //     background-color: $secondaryColor;
-    // }
-
-    // .highlighted-image {
-    //     position: absolute;
-    //     height: auto;
-    //     width: 75%;
-    // }
+    // credit to Jules on box-shadow solution
+    .highlighted-image {
+        box-shadow: 20px 20px $secondaryColor, -200px 20px $secondaryColor;
+        position: absolute;
+        bottom: calc(5% + 3px);
+    }
 }
 
 // child 2-2
 .highlighted-content-container {
-    border: 2px salmon solid;
+    width: 40%;
+    padding-top: 8%;
+
+    .highlighted-title {
+        @include headerFour;
+
+    }
+
+    .highlighted-paragraph {
+        @include para($secondaryFont);
+        padding: 5% 0;
+    }
+}
+
+// highlighted section two
+.highlighted-section-two {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-bottom: -2%;
+}
+
+.highlighted-content-container-two {
+    width: 40%;
+
+    .highlighted-title-two {
+        @include headerFour;
+        text-align: right;
+    }
+
+    .highlighted-paragraph-two {
+        @include para($secondaryFont);
+        padding: 5% 0;
+        text-align: right;
+    }
+
+    .button-two {
+        float: right;
+    }
+    
+}
+
+.highlighted-image-container-two {
     width: 50%;
+    position: relative;
 
-    .highlighted-content {
-        border: 2px black solid;
-        margin: 0;
-        margin-right: auto;
-
-        .highlighted-title {
-            @include headerFour;
-            padding-top: 12%;
-        }
-
-        .highlighted-paragraph {
-            @include para($secondaryFont);
-            padding: 3% 0;
-        }
+    .highlighted-image-two {
+        box-shadow: 20px 20px $primaryColor, 200px 20px $primaryColor;
+        width: 100%;
     }
 }
 
@@ -164,7 +190,7 @@ header {
 .gallery {
     padding: 6% 0;
     display: flex;
-    flex-flow: row-wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     
     .gallery-image:nth-child(2) {
@@ -176,27 +202,40 @@ header {
 // secondary nav
 .secondary-nav {
     background-color: $whiteShade;
-    padding: 5% 0;
+    padding: 5% 0 2%;
 
 
-    .parent {
+    .nav-option-container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .nav-option {
         display: flex;
         flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 50%;
+        margin-bottom: 5%;
+
+        .nav-icon-container {
+            width: 10%;
+            height: 100%;
+        }
     
         .nav-icon {
             background-color: $accentColor;
             color: $blackShade;
             font-size: 2.0rem;
-            padding: 1%;
+            padding: 20%;
             border-radius: 50%;
-            margin-right: 1%;
         }
 
         .nav-content-container {
-            width: 80%;
+            width: 90%;
 
             .nav-title {
                 @include headerFive;
+                padding: 1% 0 2%;
             }
 
             .nav-description {

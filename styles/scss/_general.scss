@@ -39,7 +39,7 @@ a {
     margin: 0 auto;
 }
 
-.button {
+.button, .button-two {
     @include para($primaryFont);
     text-transform: uppercase;
     background-color: $accentColor;
@@ -48,7 +48,9 @@ a {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button-two:hover,
+.button-two:focus {
     background-color: darken($accentColor, 5);
     color: $whiteShade;
 }

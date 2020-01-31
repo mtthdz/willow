@@ -272,7 +272,7 @@ a {
   margin: 0 auto;
 }
 
-.button {
+.button, .button-two {
   font-family: "Abril Fatface", cursive;
   font-weight: 300;
   font-size: 1.8rem;
@@ -286,7 +286,9 @@ a {
 }
 
 .button:hover,
-.button:focus {
+.button:focus,
+.button-two:hover,
+.button-two:focus {
   background-color: #e19a20;
   color: #F6F6F6;
 }
@@ -346,10 +348,6 @@ a {
 
 .nav-list .nav-item:nth-child(5) {
   margin-right: 0;
-}
-
-.wrapper {
-  outline: 1px blue solid;
 }
 
 header {
@@ -434,43 +432,100 @@ header .header-headshot {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .highlighted-image-container {
-  border: 2px blue solid;
   width: 50%;
   position: relative;
 }
 
+.highlighted-image-container .highlighted-image {
+  -webkit-box-shadow: 20px 20px #709B6B, -200px 20px #709B6B;
+          box-shadow: 20px 20px #709B6B, -200px 20px #709B6B;
+  position: absolute;
+  bottom: calc(5% + 3px);
+}
+
 .highlighted-content-container {
-  border: 2px salmon solid;
-  width: 50%;
+  width: 40%;
+  padding-top: 8%;
 }
 
-.highlighted-content-container .highlighted-content {
-  border: 2px black solid;
-  margin: 0;
-  margin-right: auto;
-}
-
-.highlighted-content-container .highlighted-content .highlighted-title {
+.highlighted-content-container .highlighted-title {
   font-family: "Abril Fatface", cursive;
   font-weight: regular;
   font-size: 3.2rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #1F1F1F;
-  padding-top: 12%;
 }
 
-.highlighted-content-container .highlighted-content .highlighted-paragraph {
+.highlighted-content-container .highlighted-paragraph {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 1.5;
   color: #1F1F1F;
-  padding: 3% 0;
+  padding: 5% 0;
+}
+
+.highlighted-section-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4%;
+  margin-bottom: -2%;
+}
+
+.highlighted-content-container-two {
+  width: 40%;
+}
+
+.highlighted-content-container-two .highlighted-title-two {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  text-align: right;
+}
+
+.highlighted-content-container-two .highlighted-paragraph-two {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+  padding: 5% 0;
+  text-align: right;
+}
+
+.highlighted-content-container-two .button-two {
+  float: right;
+}
+
+.highlighted-image-container-two {
+  width: 50%;
+  position: relative;
+}
+
+.highlighted-image-container-two .highlighted-image-two {
+  -webkit-box-shadow: 20px 20px #345231, 200px 20px #345231;
+          box-shadow: 20px 20px #345231, 200px 20px #345231;
+  width: 100%;
 }
 
 .featured {
@@ -538,8 +593,8 @@ header .header-headshot {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row-wrap;
-          flex-flow: row-wrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -551,10 +606,20 @@ header .header-headshot {
 
 .secondary-nav {
   background-color: #F6F6F6;
-  padding: 5% 0;
+  padding: 5% 0 2%;
 }
 
-.secondary-nav .parent {
+.secondary-nav .nav-option-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.secondary-nav .nav-option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,31 +627,41 @@ header .header-headshot {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50%;
+  margin-bottom: 5%;
 }
 
-.secondary-nav .parent .nav-icon {
+.secondary-nav .nav-option .nav-icon-container {
+  width: 10%;
+  height: 100%;
+}
+
+.secondary-nav .nav-option .nav-icon {
   background-color: #E4A436;
   color: #1F1F1F;
   font-size: 2.0rem;
-  padding: 1%;
+  padding: 20%;
   border-radius: 50%;
-  margin-right: 1%;
 }
 
-.secondary-nav .parent .nav-content-container {
-  width: 80%;
+.secondary-nav .nav-option .nav-content-container {
+  width: 90%;
 }
 
-.secondary-nav .parent .nav-content-container .nav-title {
+.secondary-nav .nav-option .nav-content-container .nav-title {
   font-family: "Abril Fatface", cursive;
   font-weight: regular;
   font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #1F1F1F;
+  padding: 1% 0 2%;
 }
 
-.secondary-nav .parent .nav-content-container .nav-description {
+.secondary-nav .nav-option .nav-content-container .nav-description {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
