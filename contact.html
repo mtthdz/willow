@@ -5,61 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/style.css">    
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300,700&display=swap" rel="stylesheet">
 
     <title>Willow - contact</title>
 </head>
 <body>
-    <header>
-        <section class="nav">
-            <h3 class="wrapper nav-title">willow</h3>
-            <nav class="wrapper main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">home</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="#">about</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="./blog.html">blog</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a></li class="nav-item">
+    <div class="contact-color">
+        <header>
+            <section class="main-nav">
+                <nav class="main-nav">
+                    <ul class="wrapper nav-list">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html">about</a></li>
+                        <li class="nav-item"><a href="./index.html" class="nav-link">
+                                <h3 class="nav-title">willow</h3>
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        
+            <section class="banner">
+                <div class="wrapper">
+                    <h2 class="page-title">contact me</h2>
+                </div>
+            </section>
+        </header>
+        
+        <main class="wrapper parent">
+            <section class="contact-info">
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
                 </ul>
-            </nav>
-        </section>
-    
-        <section class="banner">
-            <h2 class="page-title">blog & news</h2>
-        </section>
-    </header>
-    
-    <aside class="contact-info">
-        <ul class="social-list">
-            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
-            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    
-        <ul class="contact-list">
-            <li class="contact-item"><a href="#" class="contact-link">info@email.com</a></li>
-            <li class="contact-item"><a href="#" class="contact-link">123 - 456 - 7890</a></li>
-            <li class="contact-item"><a href="#" class="contact-link">123 Queen Street West, Unit 10</a></li>
-            <li class="contact-item"><a href="#" class="contact-link">Toronto, Ontario</a></li>
-            <li class="contact-item"><a href="#" class="contact-link">M5V2D5</a></li>
-        </ul>
-    </aside>
-    
-    <main class="contact-form">
-        <section class="comment-submission">
-            <form action="" class="comment-submission-form">
-                <input type="name" placeholder="name" required>
-                <input type="email" placeholder="email address" required>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                <button type="submit">submit</button>
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p class="wrapper copyright">copyright &copy; 2018 HackerYou</p>
-    </footer>
+            
+                <ul class="contact-list">
+                    <li class="contact-item"><a href="#" class="contact-link">info@email.com</a></li>
+                    <li class="contact-item"><a href="#" class="contact-link">123 - 456 - 7890</a></li>
+                    <li class="contact-item"><a href="#" class="contact-link">123 Queen Street West, Unit 10</a></li>
+                    <li class="contact-item"><a href="#" class="contact-link">Toronto, Ontario</a></li>
+                    <li class="contact-item"><a href="#" class="contact-link">M5V2D5</a></li>
+                </ul>
+            </section>
+            
+            <section class="contact-form">
+                <form action="" class="comment-submission-form">
+                    <input class="name-input" type="name" placeholder="Name" required>
+                    <input class="email-input" type="email" placeholder="Email address" required>
+                    <textarea class="text-area" name="message" id="message" cols="30" rows="12" placeholder="Message" required></textarea>
+                    <button class="button" type="submit">submit</button>
+                </form>
+            </section>
+        </main>
 
+        <footer>
+            <p class="wrapper copyright">copyright &copy; 2018 HackerYou</p>
+        </footer>
+    </div>
     <script src="https://kit.fontawesome.com/ed10b86544.js" crossorigin="anonymous"></script>
 </body>
 </html>
