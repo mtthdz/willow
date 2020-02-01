@@ -9,75 +9,110 @@
 
     <title>Willow - blog</title>
 </head>
-<body>
+<body class="blog-color">
     <header>
-        <section class="nav">
-            <h3 class="wrapper nav-title">willow</h3>
-            <nav class="wrapper main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="#">home</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="#">about</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="./blog.html">blog</a></li class="nav-item">
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a></li class="nav-item">
+        <section class="main-nav">
+            <nav>
+                <ul class="wrapper nav-list">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">about</a></li>
+                    <li class="nav-item"><a href="./index.html" class="nav-link">
+                            <h3 class="nav-title">willow</h3>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./blog.html">blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">contact</a></li>
                 </ul>
             </nav>
         </section>
     
         <section class="banner">
-            <h2 class="page-title">blog & news</h2>
+            <div class="wrapper">
+                <h2 class="page-title">blog & news</h2>
+            </div>
         </section>
     </header>
-    
-    <aside class="wrapper">
-        <section class="about">
-            <img class="about-headshot" src="./assets/blog-image-2.jpg" alt="headshot of willow">
-            <h5 class="about-title">about willow</h5>
-            <p class="about-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi quidem molestias
-                vel omnis deleniti nihil doloribus beatae nam. In error veniam architecto nesciunt reprehenderit repellat
-                sint quam, facilis beatae. <a href="./home.html" class="about-expand">find out more.</a></p>
-        </section>
-    
-        <section class="recent">
-            <h5 class="recent-title">recent posts</h5>
-            <ul class="recent-list">
-                <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
-                <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit amet.</a></li>
-                <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
-                <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
-            </ul>
-        </section>
-    </aside>
-    
-    <main class="wrapper">
-        <section class="post">
-    
-        </section>
-    
-        <section class="comment-section">
-            <div class="posted-comment">
-                <img src="./assets/blog-image-3.jpg" alt="headshot of Barbara" class="comment-icon">
-                <p class="comment-timestamp">Tuesday October 9th, 2018 by Barb</p>
-                <p class="comment-paragraph">lorem</p>
+
+    <main class="wrapper parent">
+        <section class="aside-content-container">
+            <div class="blog-about">
+                <img class="blog-about-headshot" src="./assets/blog-image-2.jpg" alt="headshot of willow">
+                <h5 class="blog-about-title">about willow</h5>
+                <p class="blog-about-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro modi quidem molestias
+                    vel omnis. <span class="about-expand"><a class="about-link" href="./home.html">Find out more.</a></span></p>
             </div>
-            <div class="posted-comment">
-                <img src="./assets/blog-image-4.jpg" alt="headshot of Daisy" class="comment-icon">
-                <p class="comment-timestamp">Wednesday October 10th, 2018 by Daisy</p>
-                <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ducimus vero
-                    amet, a, iusto saepe aliquam maxime est, impedit numquam facere sint fugit laudantium voluptatem eos
-                    delectus id voluptates illum!</p>
+        
+            <div class="blog-recent">
+                <h5 class="recent-title">recent posts</h5>
+                <ul class="recent-list">
+                    <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
+                    <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit amet.</a></li>
+                    <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
+                    <li class="recent-item"><a href="#" class="recent-link">Lorem ipsum dolor sit.</a></li>
+                </ul>
             </div>
         </section>
-    
-        <section class="comment-submission">
-            <form action="" class="comment-submission-form">
-                <input type="name" placeholder="name" required>
-                <input type="email" placeholder="email address" required>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="comment" required></textarea>
-                <button type="submit">post comment</button>
-            </form>
+        
+        <section class="blog-content-container">
+            <!-- blog post -->
+            <div class="blog-post">
+                <h5 class="blog-title">my favourite travel destinations</h5>
+                <p class="blog-timestamp">Monday October 8th, 2018 by Willow</p>
+
+                <p class="blog-paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, molestias incidunt odio dolore esse vero porro sed similique eos quis quisquam aut aliquid impedit, autem modi possimus cumque ipsa eius, fugit omnis dicta alias quo deserunt dolor. Asperiores, aperiam. At!</p>
+
+                <p class="blog-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, magni? Amet, maxime unde porro similique possimus recusandae voluptatum autem adipisci veritatis accusantium impedit ut aspernatur! Adipisci est culpa blanditiis. Ea eius eligendi modi illum doloribus dolorum consequuntur nemo aliquam. Quas quisquam numquam tenetur facere, pariatur doloribus hic unde modi. Cum.</p>
+
+                <p class="blog-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi cum laborum amet fuga, numquam neque ipsum iste inventore ad delectus porro corporis consectetur voluptatum deleniti ipsam tempore reiciendis esse tenetur ipsa? Minus corporis error quo. Soluta facere doloribus laborum illo, obcaecati, perferendis tempore, minima ad maiores id quasi quod vitae libero quam modi consectetur provident expedita deleniti. Quo eligendi natus vitae totam ipsam qui mollitia tempore, veniam ea nam eveniet iusto distinctio accusamus sequi reiciendis aspernatur consequatur deserunt doloribus tenetur?</p>
+
+                <p class="blog-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit temporibus nostrum incidunt. Perferendis nam recusandae est dicta totam, dolorum molestiae!</p>
+
+                <p class="blog-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas qui placeat molestias quisquam, aut ipsum distinctio corrupti culpa minima sed provident veniam illo magnam cupiditate tempore aliquam ratione excepturi esse!</p>
+
+                <p class="blog-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, est id? Necessitatibus suscipit voluptatum quia nemo! Dolore eligendi itaque porro iste rerum quibusdam earum, assumenda voluptatum veniam tenetur maiores. Impedit nobis voluptas nemo fugit quam cupiditate corporis iusto ratione veritatis?</p>
+            </div>
+        
+            <!-- comments -->
+            <div class="comment-section">
+                <div class="posted-comment">
+                    <div class="comment-picture-container">
+                        <img class="comment-picture" src="./assets/blog-image-3.jpg" alt="headshot of Barbara">
+                    </div>
+                    <div class="comment-paragraph-container">
+                        <p class="comment-timestamp">Tuesday October 9th, 2018 by Barb</p>
+                        <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ducimus vero
+                        amet, a, iusto saepe aliquam maxime est, impedit numquam facere sint fugit laudantium voluptatem eos
+                        delectus id voluptates illum!</p>
+                    </div>
+                </div>
+            </div>                
+
+            <div class="comment-section">
+                <div class="posted-comment">
+                    <div class="comment-picture-container">
+                        <img class="comment-picture" src="./assets/blog-image-4.jpg" alt="headshot of Daisy" >
+                    </div>
+                    <div class="comment-paragraph-container">
+                        <p class="comment-timestamp">Wednesday October 10th, 2018 by Daisy</p>
+                        <p class="comment-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ducimus vero
+                            amet, a, iusto saepe aliquam maxime est, impedit numquam facere sint fugit laudantium voluptatem eos
+                            delectus id voluptates illum!</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- form -->
+            <div class="contact-form">
+                <form action="" class="comment-submission-form">
+                    <input class="name-input" type="name" placeholder="Name" required>
+                    <input class="email-input" type="email" placeholder="Email address" required>
+                    <textarea class="text-area" name="message" id="message" cols="30" rows="12" placeholder="Comment"
+                        required></textarea>
+                    <button class="button" type="submit">post comment</button>
+                </form>
+            </div>
         </section>
     </main>
-    
+
     <footer>
         <p class="wrapper copyright">copyright &copy; 2018 HackerYou</p>
     </footer>

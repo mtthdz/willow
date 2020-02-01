@@ -358,6 +358,7 @@ header {
 header .header-title-container {
   width: 70%;
   position: relative;
+  z-index: 4;
 }
 
 header .header-title-container .header-subtitle {
@@ -381,6 +382,7 @@ header .header-headshot {
   right: 10%;
   top: 20%;
   position: absolute;
+  z-index: 2;
 }
 
 .about {
@@ -422,6 +424,10 @@ header .header-headshot {
   text-align: center;
   padding: 2% 0;
   width: 100%;
+}
+
+.highlighted {
+  background-color: #FFFFFF;
 }
 
 .highlighted-section {
@@ -827,6 +833,272 @@ footer .copyright {
   margin: 2% auto;
   width: 100%;
   padding: 5% 3% 0%;
+}
+
+.comment-submission-form .button {
+  width: 100%;
+}
+
+.blog-color {
+  background-color: #F6F6F6;
+}
+
+.banner {
+  height: 40vh;
+  background-image: url("../assets/blog-image-1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.banner .page-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 6.0rem;
+  text-transform: uppercase;
+  line-height: 92px;
+  letter-spacing: 1px;
+  color: #F6F6F6;
+  line-height: 44px;
+  position: absolute;
+  bottom: 0;
+}
+
+.parent {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.parent .aside-content-container {
+  width: 32%;
+}
+
+.parent .blog-content-container {
+  width: calc(100% - 32% - 4%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.parent .blog-content-container .blog-post,
+.parent .blog-content-container .comment-section,
+.parent .blog-content-container .contact-form {
+  width: 100%;
+}
+
+.blog-about,
+.blog-recent {
+  background-color: #FFFFFF;
+  padding: 8%;
+}
+
+.blog-about .blog-about-title,
+.blog-recent .blog-about-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  padding: 5% 0;
+}
+
+.blog-about .blog-about-paragraph,
+.blog-recent .blog-about-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+}
+
+.blog-about .blog-about-paragraph .about-expand,
+.blog-recent .blog-about-paragraph .about-expand {
+  font-weight: bold;
+}
+
+.blog-about .blog-about-paragraph .about-expand .about-link,
+.blog-recent .blog-about-paragraph .about-expand .about-link {
+  color: #709B6B;
+}
+
+.blog-about .blog-about-paragraph .about-expand .about-link:hover,
+.blog-about .blog-about-paragraph .about-expand .about-link:focus,
+.blog-recent .blog-about-paragraph .about-expand .about-link:hover,
+.blog-recent .blog-about-paragraph .about-expand .about-link:focus {
+  color: #445f41;
+}
+
+.blog-about .recent-title,
+.blog-recent .recent-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  padding: 5% 0;
+}
+
+.blog-about .recent-list,
+.blog-recent .recent-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.blog-about .recent-list .recent-item,
+.blog-recent .recent-list .recent-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+}
+
+.blog-about .recent-list .recent-item .recent-link:hover,
+.blog-about .recent-list .recent-item .recent-link:focus,
+.blog-recent .recent-list .recent-item .recent-link:hover,
+.blog-recent .recent-list .recent-item .recent-link:focus {
+  color: #9f9f9f;
+}
+
+.blog-post {
+  background-color: #FFFFFF;
+  margin-bottom: 5%;
+  padding: 4%;
+  border-bottom: 4px solid #709B6B;
+}
+
+.blog-post .blog-title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: regular;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1F1F1F;
+  padding-bottom: 2%;
+}
+
+.blog-post .blog-timestamp,
+.blog-post .blog-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+  padding-bottom: 2%;
+}
+
+.comment-section {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 4%;
+  margin-bottom: 5%;
+}
+
+.posted-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.posted-comment .comment-picture-container {
+  width: 15%;
+}
+
+.posted-comment .comment-picture-container .comment-picture {
+  width: 100%;
+  height: auto;
+}
+
+.posted-comment .comment-paragraph-container {
+  width: calc(100% - 15% - 2%);
+  margin-left: 2.5%;
+}
+
+.posted-comment .comment-paragraph-container .comment-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+}
+
+.posted-comment .comment-paragraph-container .comment-timestamp {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+  padding-bottom: 2%;
+}
+
+section.blog-content-container div:nth-child(3) {
+  border-bottom: 4px solid #709B6B;
+}
+
+.comment-submission-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  color: #1F1F1F;
+}
+
+.comment-submission-form .name-input {
+  font-weight: 300;
+  border: none;
+  width: calc(50% - 2%);
+  margin-right: 2%;
+  padding: 4%;
+}
+
+.comment-submission-form .email-input {
+  border: none;
+  font-weight: 300;
+  width: 50%;
+  padding: 4%;
+}
+
+.comment-submission-form .text-area {
+  font-weight: 300;
+  resize: none;
+  border: none;
+  margin: 2% auto;
+  width: 100%;
+  padding: 5% 4% 0%;
 }
 
 .comment-submission-form .button {

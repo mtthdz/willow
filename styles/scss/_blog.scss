@@ -1,0 +1,196 @@
+.blog-color {
+    background-color: $whiteShade;
+}
+
+// header
+/////////////////////////
+.banner {
+    height: 40vh;
+    background-image: url("../assets/blog-image-1.jpg");
+    background-size: cover;
+    position: relative;
+
+    .page-title {
+        @include headerTwo;
+        line-height: 44px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+// body flex relationship
+/////////////////////////
+.parent {
+    margin: 5% auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    // child 1/2
+    .aside-content-container {
+        width: 32%;
+    }
+
+    // child 2/2
+    .blog-content-container {
+        width: calc(100% - 32% - 4%);
+        display: flex;
+        flex-flow: column nowrap;
+
+        .blog-post,
+        .comment-section,
+        .contact-form {
+        width: 100%;
+        }
+    }
+}
+
+// aside section
+.blog-about,
+.blog-recent {
+    background-color: #FFFFFF;
+    padding: 8%;
+
+    // aside - about section
+    .blog-about-title {
+        @include headerFive;
+        padding: 5% 0;
+    }
+
+    .blog-about-paragraph {
+        @include para($secondaryFont);
+
+        .about-expand {
+            font-weight: bold;
+            
+            .about-link {
+                color: $secondaryColor;
+            }
+
+            .about-link:hover,
+            .about-link:focus {
+                color: darken($secondaryColor, 20);
+            }
+        }
+    }
+
+    // aside - recent section
+    .recent-title {
+        @include headerFive;
+        padding: 5% 0;
+    }
+
+    .recent-list {
+        list-style-type: disc;
+        list-style-position: inside;
+
+        .recent-item {
+            @include para($secondaryFont);
+
+            .recent-link:hover,
+            .recent-link:focus {
+                color: lighten($blackShade, 50);
+            }
+        }
+
+    }
+}
+
+// blog post section
+.blog-post {
+    background-color: #FFFFFF;
+    margin-bottom: 5%;
+    padding: 4%;
+    border-bottom: 4px solid $secondaryColor;
+    
+    .blog-title {
+        @include headerFive;
+        padding-bottom: 2%;
+    }
+
+    .blog-timestamp,
+    .blog-paragraph {
+        @include para($secondaryFont);
+        padding-bottom: 2%;
+    }
+}
+
+
+// comment sub-section
+.comment-section {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 5%;
+
+}
+
+.posted-comment {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .comment-picture-container {
+        width: 15%;
+
+        .comment-picture {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .comment-paragraph-container {
+        width: calc(100% - 15% - 2%);
+        margin-left: 2.5%;
+
+        .comment-paragraph {
+            @include para($secondaryFont);
+        }
+
+        .comment-timestamp {
+            @include para($secondaryFont);
+            padding-bottom: 2%;
+        }
+    }
+}
+
+section.blog-content-container div:nth-child(3) {
+    border-bottom: 4px solid $secondaryColor;
+}
+
+
+
+// comment submission form sub-scetion
+.comment-submission-form {
+    display: flex;
+    flex-flow: row wrap;
+    @include para($secondaryFont);    
+    
+    .name-input {
+        font-weight: 300;
+        border: none;
+        width: calc(50% - 2%);
+        margin-right: 2%;
+        padding: 4%;
+    }
+
+    .email-input {
+        border: none;
+        font-weight: 300;
+        width: 50%;
+        padding: 4%;
+    }
+
+    .text-area {
+        font-weight: 300;
+        resize: none;
+        border: none;
+        margin: 2% auto;
+        width: 100%;
+        padding: 5% 4% 0%;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
