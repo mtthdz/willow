@@ -1,0 +1,43 @@
+
+
+
+
+@media (max-width: 710px) {
+
+    .banner {
+        .page-title {
+            font-size: 4.0rem;
+        }
+    }
+
+    .parent {
+        flex-direction: column-reverse;
+
+        .contact-info {
+            width: 100%;
+
+        }
+
+        .contact-form {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+
+
+    .comment-submission-form {
+
+        .name-input {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 2%;
+        }
+
+        .email-input {
+            width: 100%;
+        }
+    }
+}
+
+
+

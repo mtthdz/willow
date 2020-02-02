@@ -1,6 +1,15 @@
 
 
+
+
 @media (max-width: 710px) {
+
+    .banner {
+        .page-title {
+            font-size: 4.0rem;
+        }
+    }
+
     .parent {
         flex-direction: column-reverse;
 
