@@ -17,7 +17,7 @@
 
 // breakpoint 1
 @media (min-width: 1490px) {
-    header {
+    .main-header {
 
         .header-headshot-container {
             top: 15%;
@@ -33,7 +33,7 @@
 
 // breakpoint 2
 @media (min-width: 1600px) {
-    header {
+    .main-header {
 
         .header-headshot-container {
             width: 25%;
@@ -70,7 +70,7 @@
 // minor breakpoint - index
 @media (max-width: 1107px) {
 
-    header {
+    .main-header {
 
         .header-title-container {
 
@@ -125,7 +125,7 @@
 
     }
     
-    header {
+    .main-header {
         .header-title-container {
             .header-title {
                 font-size: 10.0rem;
@@ -192,7 +192,7 @@
 // breakpoint 2 - index
 @media (max-width: 760px) {
 
-    header {
+    .main-header {
         .header-title-container {
             .header-title {
                 font-size: 8.0rem;
@@ -254,7 +254,7 @@
         }
     }
 
-    header {
+    .main-header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -287,7 +287,7 @@
         }
     }
 
-    .banner {
+    .banner-break {
         display: none;
     }
 
@@ -306,7 +306,7 @@
 // minor breakpoint - index
 @media (max-width: 415px) {
 
-    header {
+    .mainheader {
         .header-title-container {
             .header-title {
                 font-size: 7.0rem;

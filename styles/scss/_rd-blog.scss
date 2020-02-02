@@ -1,0 +1,36 @@
+
+
+@media (max-width: 710px) {
+    .parent {
+        flex-direction: column-reverse;
+
+        .aside-content-container {
+            width: 100%;
+
+            .blog-about-headshot {
+                width: 80%;
+            }
+        }
+
+        .blog-content-container {
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    }
+
+    .comment-submission-form {
+
+        .name-input {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 2%;
+        }
+
+        .email-input {
+            width: 100%;
+        }
+    }
+}
+
+
+
