@@ -1,3 +1,5 @@
+
+
 @import "setup";
 @import "variables";
 @import "general";
@@ -5,6 +7,8 @@
 @import "index";
 @import "contact";
 @import "blog";
-@import "responsive-design";
 
-// css
+// responsive design
+@import "rd-index";
+@import "rd-blog";
+

@@ -1,6 +1,21 @@
 
-// wide screen breakpoints
 
+// index
+// notes
+// 1. in order of widescreen and smallscreen breakpoints
+// 2. smaller screen consists of five breakpoints:
+//      minor - 1107px
+//      minor - 978px
+//      breakpoint 1 - 855px
+//      breakpoint 2 - 760px
+//      breakpoint 3 - 605px
+//      minor - 415px
+
+
+// wide screen breakpoints
+/////////////////////////
+
+// breakpoint 1
 @media (min-width: 1490px) {
     header {
 
@@ -16,6 +31,7 @@
     }
 }
 
+// breakpoint 2
 @media (min-width: 1600px) {
     header {
 
@@ -47,9 +63,11 @@
     }    
 }
 
-// smaller screen breakpoints 
 
-// index bp1
+// smaller screen breakpoints 
+/////////////////////////
+
+// minor breakpoint - index
 @media (max-width: 1107px) {
 
     header {
@@ -64,7 +82,7 @@
 
 }
 
-// index bp2
+// minor breakpoint - index
 @media (max-width: 978px) {
 
     .highlighted {
@@ -75,7 +93,7 @@
 
 }
 
-// index bp3
+// breakpoint 1 - index
 @media (max-width: 855px) {
 
 
@@ -171,6 +189,7 @@
     }
 }
 
+// breakpoint 2 - index
 @media (max-width: 760px) {
 
     header {
@@ -221,6 +240,7 @@
     }
 }
 
+// breakpoint 3 - index
 @media(max-width: 605px) {
 
     .main-nav {
@@ -283,7 +303,7 @@
     }
 }
 
-
+// minor breakpoint - index
 @media (max-width: 415px) {
 
     header {
@@ -302,3 +322,6 @@
         }
     }
 }
+
+
+
