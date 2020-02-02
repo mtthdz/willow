@@ -1,6 +1,11 @@
+
+
+
+
 .blog-color {
     background-color: $whiteShade;
 }
+
 
 // header
 /////////////////////////
@@ -17,6 +22,7 @@
         bottom: 0;
     }
 }
+
 
 // body flex relationship
 /////////////////////////
@@ -98,6 +104,7 @@
     }
 }
 
+
 // blog post section
 .blog-post {
     background-color: #FFFFFF;
@@ -160,7 +167,6 @@ section.blog-content-container div:nth-child(3) {
 }
 
 
-
 // comment submission form sub-scetion
 .comment-submission-form {
     display: flex;
@@ -195,3 +201,6 @@ section.blog-content-container div:nth-child(3) {
         width: 100%;
     }
 }
+
+
+
