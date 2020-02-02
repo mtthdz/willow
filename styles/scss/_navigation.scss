@@ -44,4 +44,23 @@
     .nav-item:nth-child(5) {
         margin-right: 0;
     }
+
+    .nav-hamburger {
+        display: none;
+                
+        .hamburger-line {
+            background-color: $whiteShade;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0;
+        }
+    }
+
+    .nav-hamburger:hover,
+    .nav-hamburger:focus {
+        color: $accentColor;
+    }
 }
+
+
+

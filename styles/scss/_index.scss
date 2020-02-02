@@ -28,14 +28,19 @@ header {
         }
     }
 
-    .header-headshot {
-        box-shadow: 20px 20px #FFFFFF;
+    .header-headshot-container {
         width: 30%;
         right: 10%;
         top: 20%;
         position: absolute;
         z-index: 2;
+
+        .header-headshot {
+            width: 100%;
+            box-shadow: 20px 20px #FFFFFF;
+        }
     }
+
 }
 
 
@@ -74,7 +79,8 @@ header {
 
 .highlighted-section {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -110,7 +116,8 @@ header {
 // second highlighted section
 .highlighted-section-two {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 4%;
     margin-bottom: -2%;
@@ -156,7 +163,8 @@ header {
 
 .featured-parent {
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
 
     // child 1
     .featured-image-container {
@@ -245,6 +253,11 @@ header {
 
         .nav-content-container {
             width: 90%;
+            
+            .nav-link:hover,
+            .nav-link:focus {
+                color: lighten($blackShade, 50);
+            }
 
             .nav-title {
                 @include headerFive;
@@ -273,3 +286,6 @@ footer {
         padding: 0.5% 0;
     }
 }
+
+
+
